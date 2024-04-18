@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    background-color: rgb(32, 32, 32);
+}
+
+.head{
+    display: flex;
+    justify-content: center;
+    height:54rem;
+    
+}
+
+.head img{
+    width: 30rem;
+    margin: 1rem;
+    border-radius: 20px;
+}
+
+.heading{
+    height: 47%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.top-left,
+.top-right{
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.top-left h1{
+    font-size: 60px;
+}
+
+.top-left p{
+    font-size: x-large;
+}
+
+.top-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 2rem;
+}
+
+.info-box{
+    background-color: rgba(255, 115, 0, 0.856);
+    font-size: large;
+    padding: 2rem;
+    line-height: 30px;
+    border-radius: 15px;
+    color: black;
+}
+
+.mainHeading{
+    font-size: 60px;
+    background-color: rgba(255, 115, 0, 0.856);
+    height: 10rem;
+    display: flex;
+    padding-left: 3rem;
+    align-items: center;
+}
+
+.aboutsec{
+    display: flex;
+    align-items: center;
+    margin: 3rem;
+    border: 1px solid rgba(255, 115, 0, 0.856);
+    padding: 2rem;
+    border-radius: 20px;
+}
+
+
+
+.txtabout{
+    line-height: 35px;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.aboutsec img{
+    border-radius: 20px;
+}
+
+.about-img2{
+    margin-right: 1.5rem;
+}
+.card img{
+    height: 100px;
+    border-radius: 50%;
+    width: 100px;
+    margin-right: 2rem;
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    padding: 3rem;
+    border: 1px solid rgba(255, 115, 0, 0.856);
+    border-radius: 15px;
+    margin: 1rem;
+}
+
+.icons{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 1rem;
+    padding-top: 1rem;
+}
+
+.contacts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid white;
+    padding-top: 1rem;
+    margin-top: 5rem;
+}
+
+::-webkit-scrollbar{
+    background-color: rgb(48, 48, 48);
+}
+
+@media screen and (max-width: 950px) {
+    .title h1{
+        font-size: 40px;
+    }
+    .heading p,
+    .info-box p{
+        font-size: 20px;
+        line-height: 22px;
+    }
+    .top-right{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .top-left,
+    .top-right{
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 845px) {
+    .head{
+        flex-direction: column;
+        align-items: center;
+    }
+    .top-right{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .top-right img{
+        width: 110%;
+        height: 65%;
+    }
+    .top-left{
+        position: absolute;
+        height: 80%;
+        width: 80%;
+        justify-content: space-around;
+        background-color: rgba(0, 0, 0, 0.562);
+        margin: 0;
+        border-radius: 25px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .txtabout{
+        line-height: 20px;
+        margin-bottom: 2rem;
+    }
+    .aboutsec{
+        flex-direction: column;
+
+    }
+    .aboutsec img{
+        width: 100%;
+    }
+    .top-right{
+        display: none;
+    }
+    .midabout{
+        flex-direction: column-reverse;
+     
+    }
+    .head{
+        background-image: url(https://images.pexels.com/photos/1366919/pexels-photo-1366919.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .top-left{
+        height: 120%;
+        justify-content: space-between;
+    }
+    
+    .card{
+        flex-direction: column;
+        margin: 1rem;
+    }
+    .card img{
+        margin: 1rem;
+        margin-bottom: 2rem;
+        width: 80%;
+        height: 82%;
+    }
+    .whatILike{
+        padding-right: 4rem;
+        text-align: center;
+    }
+    .card{
+        background-image: url(https://images.pexels.com/photos/1366919/pexels-photo-1366919.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+        background-position: center;
+    }
+    .card p{
+        background-color: rgba(0, 0, 0, 0.61);
+        padding: 1rem;
+        border-radius: 15px;
+    }
+    .about-img2{
+        margin: 0;
+    }
+    .txtabout{
+        padding: 0;
+    }
+    .info-box{
+        padding: 1rem;
+    }
+    .headingtxt{
+         margin-top: 3rem;
+    }
+    .contacts{
+        margin-top: 3rem;
+    }
+}
